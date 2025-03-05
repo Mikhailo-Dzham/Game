@@ -3,7 +3,7 @@ import random
 
 
 def trade_ai(n):
-    k = random.randint(-20, 30)
+    k = random.randint(-5, 12)
     n = n + (n * k) / 100
     return n
 
