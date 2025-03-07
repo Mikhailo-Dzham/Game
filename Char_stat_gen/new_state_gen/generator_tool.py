@@ -12,10 +12,10 @@ def randominus(a=50, start=10) -> int:  # Видає характеритику
             break
     return finish
 
-
-def id_generator():
-    with open('history_id', 'r') as f:
-        f = f.read()
+#WIP
+# def id_generator():
+#     with open('history_id', 'r') as f:
+#         f = f.read()
 
 
 
