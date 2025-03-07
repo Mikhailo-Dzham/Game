@@ -10,7 +10,7 @@ def trade_ai(n):
 
 def draw_circle(k = 1):
     down()
-    speed(100)
+    speed(1000)
     for i in range(45):
         left(4 * k)
         forward(2)

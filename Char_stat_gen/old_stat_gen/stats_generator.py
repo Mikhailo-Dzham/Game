@@ -1,7 +1,7 @@
 import random
 
 
-def randominus(a, start=10):
+def randominus(a, start=10) -> int: #Видає характеритику
     finish = start
     a = 100 // a - 1
     while True:
@@ -27,7 +27,7 @@ def find_top_n_values_with_keys(dictionary, n):
 
 
 chance = 50
-spins = 10
+spins = 1_000_000
 raund = 0
 characters = []
 teg_stats = {}
@@ -52,5 +52,9 @@ while True:
                 f.write(" ".join(map(str, char)) + "\n")
     elif q == 'e':
         break
+    elif q == 'i':
+        with open('teg_sum_stats', 'w') as f:
+            for kay in teg_stats.keys():
+                f.write(f"{teg_stats[kay]} ")
     elif int(q) >= 0:
         char_display(int(q))
