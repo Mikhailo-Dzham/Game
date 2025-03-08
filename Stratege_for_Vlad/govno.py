@@ -52,6 +52,8 @@ for i in range(200):
     p = trade_ai(p)
     goto(x, p - 200)
     x += 1
+    if p > 500:
+        break
 statege()
 
 
