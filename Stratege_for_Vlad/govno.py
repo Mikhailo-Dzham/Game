@@ -1,3 +1,4 @@
+import random
 from turtle import *
 
 def trade_ai(n):
