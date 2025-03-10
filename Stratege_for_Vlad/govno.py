@@ -1,12 +1,25 @@
 from turtle import *
-import random
-
 
 def trade_ai(n):
     k = random.randint(-5, 12)
     n = n + (n * k) / 100
     return n
+def draw_lines():
+    down()
 
+    for i in range(500,-200,-100):
+        goto(-100,i)
+        goto(-110,i)
+        write((i+200)*100000)
+        goto(-90,i)
+
+        goto(-100,i)
+    for i in range(-100,600,100):
+        goto(i,-200)
+        goto(i, -210)
+        write((i+200) * 100)
+        goto(i, -190)
+        goto(i, -200)
 
 def draw_circle(k = 1):
     down()
@@ -39,7 +52,11 @@ def statege():
     draw_circle()
     draw_circle(-1)
     draw_circle(-1)
+    up()
+    left(155)
+    forward(45)
 
+    write('Nastya Urus', font = ('Arial',24,'normal'))
 
 
 
@@ -48,6 +65,7 @@ goto(-100, -200)
 down()
 p = 1
 x = -100
+draw_lines()
 for i in range(200):
     p = trade_ai(p)
     goto(x, p - 200)
@@ -58,4 +76,3 @@ statege()
 
 
 mainloop()
-
