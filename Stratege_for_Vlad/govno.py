@@ -2,7 +2,7 @@ import random
 from turtle import *
 
 def trade_ai(n):
-    k = random.randint(-5, 12)
+    k = random.randint(-5, 9)
     n = n + (n * k) / 100
     return n
 def draw_lines():
@@ -67,11 +67,11 @@ down()
 p = 1
 x = -100
 draw_lines()
-for i in range(200):
+while True:
     p = trade_ai(p)
     goto(x, p - 200)
     x += 1
-    if p > 500:
+    if p > 600:
         break
 statege()
 
