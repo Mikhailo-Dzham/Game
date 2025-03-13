@@ -1,15 +1,16 @@
 from turtle import *
 
 
-def draw_circle(k=1, degc=45, deg=4, f=2):
+def draw_circle(k=1, degc=15, deg=12, f=6):
     down()
-    speed(10)
+    speed(0)
     for i in range(degc):
         left(deg * k)
         forward(f)
-    speed(1)
+    speed(10)
 
-def penis(x, y):
+def penis(x, y, size = 1, p_len = 150):
+    speed(10)
     up()
     goto(x, y)
     draw_circle()
@@ -17,7 +18,7 @@ def penis(x, y):
     draw_circle()
     forward(150)
     left(90)
-    forward(60)
+    forward(58)
     up()
     left(180)
     forward(30)
@@ -32,10 +33,8 @@ def penis(x, y):
     draw_circle()
     draw_circle(-1)
     draw_circle(-1)
+    left(180)
     up()
-    left(155)
-    forward(45)
 
 
-if __name__ is '__main__':
-    pass
+
